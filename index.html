@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anuva Banwasi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      max-width: 900px;
+      margin: 40px auto 80px;
+      line-height: 1.6;
+      color: #333;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 500;
+    }
+
+    .top-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .profile-pic {
+      width: 260px;
+      border-radius: 4px;
+    }
+
+    .bio {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    a {
+      color: #1a0dab;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    .section {
+      margin-top: 60px;
+    }
+
+    /* Publications */
+    .pub-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .pub-grid img {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    .pub-title {
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .pub-authors {
+      font-style: italic;
+      margin-bottom: 2px;
+    }
+
+    .pub-links a {
+      margin-right: 10px;
+    }
+
+    /* Research Experience list */
+    .exp-entry {
+      margin-bottom: 30px;
+    }
+
+    .exp-title {
+      font-weight: 500;
+    }
+
+    .exp-role {
+      font-style: italic;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Anuva Banwasi</h1>
+
+  <!-- ================= TOP SECTION ================ -->
+  <div class="top-section">
+    <img class="profile-pic" src="profile.jpg" alt="Profile Photo">
+
+    <div class="bio">
+      <p>
+        I am a researcher in robotics and embodied AI, working on long-horizon memory,
+        3D perception, and interaction-driven scene understanding for mobile manipulators.
+        I currently work in the Interactive Perception & Robot Learning Lab at Stanford University,
+        advised by Professor Jeannette Bohg and Dr. Cherie Ho.
+      </p>
+
+      <p>
+        Previously, I graduated cum laude from Columbia University with a B.S. in Computer Science, 
+        where I worked on zero-shot task understanding and evaluation for long-horizon tasks
+        under the guidance of Professor Shuran Song.
+      </p>
+
+      <p>Email: <a href="mailto:anuvab@stanford.edu">anuvab@stanford.edu</a></p>
+
+      <p>
+        <a href="Anuva_Banwasi_Resume.pdf">[CV]</a>
+        <a href="https://scholar.google.com/citations?user=RW7glMsAAAAJ&hl=en">[Google Scholar]</a>
+        <a href="https://github.com/anuvabanwasi">[GitHub]</a>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- ================= RESEARCH EXPERIENCE ================ -->
+  <div class="section">
+    <h2>Research Experience</h2>
+
+    <!-- 1. Stanford IPRL -->
+    <div class="exp-entry">
+      <div class="exp-title">Stanford University — Interactive Perception & Robot Learning Lab</div>
+      <div class="exp-role">Robotics Researcher · March 2025 – present · Mentors: Jeannette Bohg, Cherie Ho</div>
+      <p>
+        Building a persistent, object-centric memory system linking RGB-D perception with adaptive task
+        planning for mobile manipulators. Developed a real-time scene graph that synchronizes perception,
+        action, and memory, extending MIT Hydra for live 3D object tracking. In previous project, created 
+        a dexterous grasp evaluation pipeline using 3D Gaussian Splatting and VQ-VAE latent encodings, 
+        achieving 95% grasp success rate on diverse range of objects, surpassing BPS/NeRF baselines.
+      </p>
+    </div>
+
+    <!-- 2. Columbia Speech Lab -->
+    <div class="exp-entry">
+      <div class="exp-title">Columbia University — Speech Lab</div>
+      <div class="exp-role">NLP Researcher · May 2023 – Dec 2023 · Mentor: Julia Hirschberg</div>
+      <p>
+        Built an emotion-aware conversational AI system combining ASR, prosodic features, and LLM
+        reasoning to detect sudden shifts in affect. Created multimodal fusion of transcripts, audio
+        embeddings, and dialogue context, improving emotion-shift detection accuracy from ~40% to 78%.
+      </p>
+    </div>
+
+    <!-- 3. Columbia Robot Learning -->
+    <div class="exp-entry">
+      <div class="exp-title">Columbia University — Robot Learning</div>
+      <div class="exp-role">Independent Researcher · Nov 2022 – Aug 2023 · Mentor: Shuran Song</div>
+      <p>
+        Led a team of 4 researchers to build zero-shot learning framework that assesses step-by-step 
+        task execution for long-horizon tasks. Algorithm describes predicted step outcome with LLM, 
+        evaluates video data against language outcome description with VLM, and assesses incremental 
+        progress with custom scoring metric. Achieved ~95% accuracy across diverse household and kitchen tasks.
+        First author publication in International Conference for Robotics and Computer Vision (ICRCV 2023).
+      </p>
+    </div>
+
+    <!-- 4. Forecasting -->
+    <div class="exp-entry">
+      <div class="exp-title">Columbia University — ML & Forecasting</div>
+      <div class="exp-role">Student Researcher · Oct 2023 – July 2024 · Mentor: Michelle Levine</div>
+      <p>
+        Built vector autoregression models to forecast EV adoption using policy and infrastructure data.
+        First-author publication at the International Conference on Time Series and Forecasting (ITISE 2024).
+      </p>
+    </div>
+
+    <!-- 5. CML -->
+    <div class="exp-entry">
+      <div class="exp-title">Columbia University — Creative Machines Lab</div>
+      <div class="exp-role">Undergraduate Researcher · Sept 2022 – Dec 2022 · Mentor: Hod Lipson</div>
+      <p>
+        Designed a NeRF-inspired model that learns robot kinematics from single-view video by predicting
+        occupancy from 3D coordinates and joint angles. Used PyBullet-derived camera intrinsics to train
+        a system that reconstructs approximate 3D geometry from 2D motion.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- ================= PUBLICATIONS ================ -->
+  <div class="section">
+    <h2>Recent Publications</h2>
+
+    <!-- 1 -->
+    <div class="pub-grid">
+      <img src="pub1_1.jpg"><img src="pub1_2.jpg"><img src="pub1_3.jpg">
+      <img src="pub1_4.jpg"><img src="pub1_5.jpg"><img src="pub1_6.jpg">
+    </div>
+
+    <div class="pub-entry">
+      <div class="pub-title">Self Evaluation Using Zero-shot Learning</div>
+      <div class="pub-authors">Anuva Banwasi, Xinghua Sun, Rohith Ravindranath, March Vazquez</div>
+      <div>
+        <i>International Conference on Robotics and Computer Vision (ICRCV)</i>, Nanjing, 2023.  
+        doi: <a href="https://doi.org/10.1109/ICRCV59470.2023.10329149">10.1109/ICRCV59470.2023.10329149</a>
+      </div>
+      <div class="pub-links">
+        <a href="https://doi.org/10.1109/ICRCV59470.2023.10329149">[paper]</a>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="pub-grid">
+      <img src="pub2_1.jpg"><img src="pub2_2.jpg"><img src="pub2_3.jpg">
+      <img src="pub2_4.jpg"><img src="pub2_5.jpg"><img src="pub2_6.jpg">
+    </div>
+
+    <div class="pub-entry">
+      <div class="pub-title">Promoting Electric Vehicle Growth through Infrastructure and Policy</div>
+      <div class="pub-authors">Anuva Banwasi, Adele M Sinai, Brennan Xavier McManus</div>
+      <div>
+        <i>International Conference on Time Series and Forecasting (ITISE)</i>, 2024.  
+        doi: <a href="https://doi.org/10.3390/engproc2024068060">10.3390/engproc2024068060</a>
+      </div>
+      <div class="pub-links">
+        <a href="https://doi.org/10.3390/engproc2024068060">[paper]</a>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="pub-grid">
+      <img src="pub3_1.jpg"><img src="pub3_2.jpg"><img src="pub3_3.jpg">
+      <img src="pub3_4.jpg"><img src="pub3_5.jpg"><img src="pub3_6.jpg">
+    </div>
+
+    <div class="pub-entry">
+      <div class="pub-title">A Comparative Analysis of Guardrail Frameworks for LLMs</div>
+      <div class="pub-authors">Anuva Banwasi, Samuel Friedman, Michael Khanzadeh</div>
+      <div>
+        Under review at <i>ACL 2026</i>.
+      </div>
+      <div class="pub-links">
+        <a href="https://github.com/llmguardrails/LLMGuardrailsPaper">[manuscript]</a>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="pub-grid">
+      <img src="pub4_1.jpg"><img src="pub4_2.jpg"><img src="pub4_3.jpg">
+      <img src="pub4_4.jpg"><img src="pub4_5.jpg"><img src="pub4_6.jpg">
+    </div>
+
+    <div class="pub-entry">
+      <div class="pub-title">Hands Off, Splat On: Dexterous Grasp Evaluator with 3D Gaussian Encodings</div>
+      <div class="pub-authors">Anuva Banwasi, Yi Du, Ashwin Mahendran</div>
+      <div>In submission.</div>
+      <div class="pub-links">
+        <a href="https://github.com/Dude346/CS231A">[code]</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
