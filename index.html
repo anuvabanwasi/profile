@@ -40,6 +40,10 @@
       min-width: 250px;
     }
 
+    .bio p:first-of-type {
+      margin-top: 0;
+    }
+
     a {
       color: #1a0dab;
       text-decoration: none;
@@ -137,9 +141,10 @@
       <p>
         Developing a persistent, object-centric memory system linking RGB-D perception with adaptive task
         planning for mobile manipulators. Built a real-time scene graph that synchronizes perception,
-        action, and memory, extending MIT Hydra for live 3D object tracking. Previously created a dexterous 
-        grasp evaluation pipeline using 3D Gaussian Splatting and VQ-VAE latent encodings, achieving a 95% 
-        grasp success rate across diverse objects.
+        action, and memory, extending MIT Hydra for live 3D object tracking. Previously worked on building
+        a grasp evaluation pipeline for dexterous multi-finger grasping using 3D Gaussian Splatting as 
+        object representation encoded with custom VQ-VAE architecture, achieving a 95% grasp success rate 
+        in simulation across diverse objects.
       </p>
     </div>
 
@@ -149,9 +154,9 @@
       <div class="exp-role">NLP Researcher · May 2023 – Dec 2023 · Mentor: Prof. Julia Hirschberg</div>
       <p>
         Built an emotion-aware conversational AI system combining ASR, prosodic features, and LLM
-        reasoning to detect sudden shifts toward frustration or anger. Developed multimodal fusion of 
-        transcripts, audio embeddings, and dialogue context, improving emotion-shift detection accuracy 
-        from ~40% to 78%.
+        reasoning to detect sudden emotion shifts from neutral/happy/excited to sad/frustration/anger. 
+        Developed multimodal fusion of transcripts, audio embeddings, and dialogue context. Trained on 150+ IEMOCAP 
+        videos (~10GB), improving emotion-shift detection accuracy from ~40% to 78%.
       </p>
     </div>
 
@@ -160,9 +165,11 @@
       <div class="exp-title">Columbia University — Robot Learning</div>
       <div class="exp-role">Independent Researcher · Nov 2022 – Aug 2023 · Mentor: Prof. Shuran Song</div>
       <p>
-        Led development of a zero-shot task evaluation framework for long-horizon manipulation tasks, 
-        combining language-based outcome descriptions with VLM video assessment and a progress metric. 
-        Achieved ~95% accuracy across household tasks; first-author publication at ICRCV 2023.
+        Led a team of 4 researchers to build zero-shot learning framework that assesses step-by-step task execution 
+        for long-horizon tasks. Algorithm describes predicted step outcome with LLM, evaluates video data against language 
+        outcome description with VLM, and assesses incremental progress with custom scoring metric. Achieved ~95% accuracy a
+        across diverse household and kitchen tasks. First-author publication at International Conference for Robotics and Computer Vision
+        (IRCV) 2023.
       </p>
     </div>
 
@@ -183,7 +190,7 @@
       <p>
         Designed a NeRF-inspired model that learns robot kinematics from single-view video by predicting 
         occupancy from 3D coordinates and joint angles. Used PyBullet-derived camera intrinsics to 
-        reconstruct approximate 3D geometry from 2D single-view motion.
+        reconstruct approximate 3D geometry from 2D single-view video data.
       </p>
     </div>
   </div>
