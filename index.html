@@ -23,12 +23,16 @@
     .top-section {
       display: flex;
       flex-wrap: wrap;
-      gap: 30px;
+      gap: 40px;
+      align-items: flex-start;
     }
 
     .profile-pic {
-      width: 150px;
-      border-radius: 4px;
+      width: 180px;
+      height: auto;
+      border-radius: 6px;
+      object-fit: cover;
+      display: block;
     }
 
     .bio {
@@ -49,7 +53,7 @@
     /* Publications */
     .pub-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
       gap: 10px;
       margin-bottom: 20px;
     }
@@ -111,7 +115,7 @@
         under the guidance of Professor Shuran Song.
       </p>
 
-      <p>Email: <a href="anuva.banwasi@gmail.com">anuva.banwasi@gmail.com</a></p>
+      <p>Email: <a href="mailto:anuva.banwasi@gmail.com">anuva.banwasi@gmail.com</a></p>
 
       <p>
         <a href="Anuva_Banwasi_Resume.pdf">[CV]</a>
@@ -132,10 +136,10 @@
       <div class="exp-role">Robotics Researcher · March 2025 – present · Mentors: Prof. Jeannette Bohg, Dr. Cherie Ho</div>
       <p>
         Developing a persistent, object-centric memory system linking RGB-D perception with adaptive task
-        planning for mobile manipulators. Developed a real-time scene graph that synchronizes perception,
-        action, and memory, extending MIT Hydra for live 3D object tracking. In previous project, created 
-        a dexterous grasp evaluation pipeline using 3D Gaussian Splatting and VQ-VAE latent encodings, 
-        achieving 95% grasp success rate on diverse range of objects, surpassing BPS/NeRF baselines.
+        planning for mobile manipulators. Built a real-time scene graph that synchronizes perception,
+        action, and memory, extending MIT Hydra for live 3D object tracking. Previously created a dexterous 
+        grasp evaluation pipeline using 3D Gaussian Splatting and VQ-VAE latent encodings, achieving a 95% 
+        grasp success rate across diverse objects.
       </p>
     </div>
 
@@ -145,10 +149,9 @@
       <div class="exp-role">NLP Researcher · May 2023 – Dec 2023 · Mentor: Prof. Julia Hirschberg</div>
       <p>
         Built an emotion-aware conversational AI system combining ASR, prosodic features, and LLM
-        reasoning to detect sudden emotion shifts in affect from positive/neutral to frustrated/angry. 
-        Implemented end-to-end speech pipelines (ASR + TTS), extracted prosodic and lexical features, and 
-        fine-tuned LLMs using LangChain, GPT-4/3.5, and few-shot prompting. Trained on 150+ IEMOCAP 
-        videos (~10GB), improving emotion-shift detection accuracy from ~40% to 78%.
+        reasoning to detect sudden shifts toward frustration or anger. Developed multimodal fusion of 
+        transcripts, audio embeddings, and dialogue context, improving emotion-shift detection accuracy 
+        from ~40% to 78%.
       </p>
     </div>
 
@@ -157,11 +160,9 @@
       <div class="exp-title">Columbia University — Robot Learning</div>
       <div class="exp-role">Independent Researcher · Nov 2022 – Aug 2023 · Mentor: Prof. Shuran Song</div>
       <p>
-        Led a team of 4 researchers to build zero-shot learning framework that assesses step-by-step 
-        task execution for long-horizon tasks. Algorithm describes predicted step outcome with LLM, 
-        evaluates video data against language outcome description with VLM, and assesses incremental 
-        progress with custom scoring metric. Achieved ~95% accuracy across diverse household and kitchen tasks.
-        First author publication in International Conference for Robotics and Computer Vision (ICRCV 2023).
+        Led development of a zero-shot task evaluation framework for long-horizon manipulation tasks, 
+        combining language-based outcome descriptions with VLM video assessment and a progress metric. 
+        Achieved ~95% accuracy across household tasks; first-author publication at ICRCV 2023.
       </p>
     </div>
 
@@ -170,9 +171,8 @@
       <div class="exp-title">Columbia University — ML & Forecasting</div>
       <div class="exp-role">Student Researcher · Oct 2023 – July 2024 · Mentor: Prof. Michelle Levine</div>
       <p>
-        Built forecasting models using vector autoregression to predict electric vehicle (EV) adoption 
-        based on policy incentive data and charging infrastructure growth over the past decade. 
-        First-author publication at the International Conference on Time Series and Forecasting (ITISE 2024).
+        Built vector autoregression models to forecast EV adoption using policy incentives and 
+        charging infrastructure data. Produced a first-author publication at ITISE 2024.
       </p>
     </div>
 
@@ -181,83 +181,83 @@
       <div class="exp-title">Columbia University — Creative Machines Lab</div>
       <div class="exp-role">Undergraduate Researcher · Sept 2022 – Dec 2022 · Mentor: Prof. Hod Lipson</div>
       <p>
-        Designed a NeRF-inspired model that learns robot kinematics from single-view video by predicting
-        occupancy from 3D coordinates and joint angles. Used PyBullet-derived camera intrinsics to train
-        a system that reconstructs approximate 3D geometry from 2D single-view camera data.
+        Designed a NeRF-inspired model that learns robot kinematics from single-view video by predicting 
+        occupancy from 3D coordinates and joint angles. Used PyBullet-derived camera intrinsics to 
+        reconstruct approximate 3D geometry from 2D single-view motion.
       </p>
     </div>
   </div>
 
 
-<!-- ================= PUBLICATIONS ================ -->
-<div class="section">
-  <h2>Recent Publications</h2>
+  <!-- ================= PUBLICATIONS ================ -->
+  <div class="section">
+    <h2>Recent Publications</h2>
 
-  <!-- 1 -->
-  <div class="pub-grid">
-    <img src="pub1.jpg">
-  </div>
-
-  <div class="pub-entry">
-    <div class="pub-title">Self Evaluation Using Zero-shot Learning</div>
-    <div class="pub-authors">Anuva Banwasi, Xinghua Sun, Rohith Ravindranath, March Vazquez</div>
-    <div>
-      <i>International Conference on Robotics and Computer Vision (ICRCV)</i>, Nanjing, 2023.  
-      doi: <a href="https://doi.org/10.1109/ICRCV59470.2023.10329149">10.1109/ICRCV59470.2023.10329149</a>
+    <!-- 1 -->
+    <div class="pub-grid">
+      <img src="pub1.jpg">
     </div>
-    <div class="pub-links">
-      <a href="https://doi.org/10.1109/ICRCV59470.2023.10329149">[paper]</a>
+
+    <div class="pub-entry">
+      <div class="pub-title">Self Evaluation Using Zero-shot Learning</div>
+      <div class="pub-authors">Anuva Banwasi, Xinghua Sun, Rohith Ravindranath, March Vazquez</div>
+      <div>
+        <i>International Conference on Robotics and Computer Vision (ICRCV)</i>, Nanjing, 2023.  
+        doi: <a href="https://doi.org/10.1109/ICRCV59470.2023.10329149">10.1109/ICRCV59470.2023.10329149</a>
+      </div>
+      <div class="pub-links">
+        <a href="https://doi.org/10.1109/ICRCV59470.2023.10329149">[paper]</a>
+      </div>
     </div>
-  </div>
 
-  <!-- 2 -->
-  <div class="pub-grid">
-    <img src="pub2.jpg">
-  </div>
-
-  <div class="pub-entry">
-    <div class="pub-title">Promoting Electric Vehicle Growth through Infrastructure and Policy</div>
-    <div class="pub-authors">Anuva Banwasi, Adele M Sinai, Brennan Xavier McManus</div>
-    <div>
-      <i>International Conference on Time Series and Forecasting (ITISE)</i>, 2024.  
-      doi: <a href="https://doi.org/10.3390/engproc2024068060">10.3390/engproc2024068060</a>
+    <!-- 2 -->
+    <div class="pub-grid">
+      <img src="pub2.jpg">
     </div>
-    <div class="pub-links">
-      <a href="https://doi.org/10.3390/engproc2024068060">[paper]</a>
+
+    <div class="pub-entry">
+      <div class="pub-title">Promoting Electric Vehicle Growth through Infrastructure and Policy</div>
+      <div class="pub-authors">Anuva Banwasi, Adele M Sinai, Brennan Xavier McManus</div>
+      <div>
+        <i>International Conference on Time Series and Forecasting (ITISE)</i>, 2024.  
+        doi: <a href="https://doi.org/10.3390/engproc2024068060">10.3390/engproc2024068060</a>
+      </div>
+      <div class="pub-links">
+        <a href="https://doi.org/10.3390/engproc2024068060">[paper]</a>
+      </div>
     </div>
-  </div>
 
-  <!-- 3 -->
-  <div class="pub-grid">
-    <img src="pub3.jpg">
-  </div>
-
-  <div class="pub-entry">
-    <div class="pub-title">A Comparative Analysis of Guardrail Frameworks for LLMs</div>
-    <div class="pub-authors">Anuva Banwasi, Samuel Friedman, Michael Khanzadeh</div>
-    <div>
-      Under review at <i>ACL 2026</i>.
+    <!-- 3 -->
+    <div class="pub-grid">
+      <img src="pub3.jpg">
     </div>
-    <div class="pub-links">
-      <a href="https://github.com/llmguardrails/LLMGuardrailsPaper">[manuscript]</a>
+
+    <div class="pub-entry">
+      <div class="pub-title">A Comparative Analysis of Guardrail Frameworks for LLMs</div>
+      <div class="pub-authors">Anuva Banwasi, Samuel Friedman, Michael Khanzadeh</div>
+      <div>
+        Under review at <i>ACL 2026</i>.
+      </div>
+      <div class="pub-links">
+        <a href="https://github.com/llmguardrails/LLMGuardrailsPaper">[manuscript]</a>
+      </div>
     </div>
-  </div>
 
-  <!-- 4 -->
-  <div class="pub-grid">
-    <img src="pub4.jpg">
-  </div>
-
-  <div class="pub-entry">
-    <div class="pub-title">Hands Off, Splat On: Dexterous Grasp Evaluator with 3D Gaussian Encodings</div>
-    <div class="pub-authors">Anuva Banwasi, Yi Du, Ashwin Mahendran</div>
-    <div>In submission.</div>
-    <div class="pub-links">
-      <a href="https://github.com/Dude346/CS231A">[code]</a>
+    <!-- 4 -->
+    <div class="pub-grid">
+      <img src="pub4.jpg">
     </div>
-  </div>
 
-</div>
+    <div class="pub-entry">
+      <div class="pub-title">Hands Off, Splat On: Dexterous Grasp Evaluator with 3D Gaussian Encodings</div>
+      <div class="pub-authors">Anuva Banwasi, Yi Du, Ashwin Mahendran</div>
+      <div>In submission.</div>
+      <div class="pub-links">
+        <a href="https://github.com/Dude346/CS231A">[code]</a>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 </html>
